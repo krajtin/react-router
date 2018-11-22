@@ -1,14 +1,12 @@
 import React from "react";
 import { element } from "prop-types";
 import Content from "./Content";
+import Header from "./Header";
+import "./App.css";
 
 const App = props => [
-  <h1 key="1" style={{ textAlign: "center" }}>
-    Routes en React JS
-  </h1>,
-
-  <div key="2" className="App">
-    <Content>{props.children}</Content>
+  <div className="App">
+    <Header />,<Content>{props.children}</Content>
   </div>
 ];
 
